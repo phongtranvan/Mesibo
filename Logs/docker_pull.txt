@@ -1,0 +1,30 @@
+latest: Pulling from mesibo/mesibo
+d28605281af9: Already exists
+b83764ad6083: Already exists
+7904dcfaec93: Already exists
+cda55bd39ab5: Already exists
+19244fe42665: Already exists
+05540cca33b9: Already exists
+4ad6e896de2c: Already exists
+c4d7ecb93607: Already exists
+1d12cad89975: Already exists
+efc1ea58c592: Already exists
+ad7a3f19efa6: Pull complete
+6ef265c7796b: Pull complete
+b07f11c52df7: Pull complete
+dfdea5ed527c: Pull complete
+e8a8c71117c3: Pull complete
+5568d93d4d79: Pull complete
+d84a0b84c89f: Pull complete
+Digest: sha256:d87bc429e62ca463488e71c0f97b0ce719f12263f5be19821f5c0f5133fa691f
+Status: Downloaded newer image for mesibo/mesibo:latest
+docker.io/mesibo/mesibo:latest
+$ sudo docker stop mesibo
+mesibo
+$ sudo docker pull mesibo/mesibo:latest
+latest: Pulling from mesibo/mesibo
+Digest: sha256:d87bc429e62ca463488e71c0f97b0ce719f12263f5be19821f5c0f5133fa691f
+Status: Image is up to date for mesibo/mesibo:latest
+docker.io/mesibo/mesibo:latest
+$ sudo docker run -v /certs:/certs -v /mesibo/scripts:/mesibo/scripts --net=host --ipc=host --name mesibo --rm -d mesibo/mesib                                                                                  o -b 5000 t2zl6kn08rbl6qjny4emrivqdp4frj7swyyqwwo74l23cz9bcfblp66yhkrzn9uq
+b1778b9a260dc7ef46d5498b9439cb12a41a8f0fff65db2681e35cb2653f88eb

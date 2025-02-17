@@ -1,0 +1,53 @@
+$ sudo docker logs mesibo
+E1702-060244-214 (1) app_init: starting mesibo  (r 0)
+E1702-060244-214 (1) write_pidfile: PID: 1
+E1702-060244-214 (1): mesibo on-premise build date: Mon Feb 17 05:55:44 2025 UTC
+E1702-060244-214 (1): mesibo on-premise build number: 9113
+E1702-060244-214 (1): CPU: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+E1702-060244-214 (1): Total RAM: 7.89 GB
+E1702-060244-214 (1): Free  RAM: 5.12 GB
+E1702-060244-214 (1): module_exports_init
+E1702-060244-215 (1): module jscloud (jscloud) loaded
+E1702-060244-215 (1): scripting initialized
+E1702-060244-215 (1): Local IP count: 2
+E1702-060244-215 (1): --> multiple(2) IPs found - listening on all the IPs. If you like to use particular IPs only, set them in configuration using one or more 'ip' fields
+E1702-060244-223 (1) signal_can_ignored: signal ignored: 17
+E1702-060244-231 (1) signal_can_ignored: signal ignored: 17
+E1702-060244-231 (1): Local IP Address: 10.0.0.19
+E1702-060244-231 (1): Local IP Address: 172.17.0.1
+E1702-060244-231 (1): Script path: /mesibo/scripts
+E1702-060244-440 (17): Authenticating app token...
+E1702-060244-902 (17): Public IP: 40.80.201.60
+E1702-060244-902 (17): Mesibo On-Premise App ID: 458692
+E1702-060244-902 (17): Database Host: qamesibo.kidkare.com
+E1702-060244-902 (17): Database Name: qamesibo
+E1702-060244-902 (17): database: qamesibo
+E1702-060244-902 (17): Connecting to database host: qamesibo.kidkare.com
+E1702-060244-934 (17): database connection verified
+E1702-060245-041 (17) print_stats: db_stats: config 151 maxused 36 inuse 27 load 17 maxload 23
+E1702-060245-045 (17) version: MySQL Version: 8.0.41-0ubuntu0.24.04.1
+E1702-060245-045 (17): Loading certificates from: /certs
+E1702-060245-045 (17) ssl_context_server: certificate: /certs/cert.pem
+E1702-060245-045 (17) ssl_context_server: private key: /certs/privkey.pem
+E1702-060245-045 (17) ssl_context_server: chain certificate: /certs/chain.pem
+E1702-060245-047 (17): starting backend on port: 5000
+E1702-060245-049 (17): starting backend: 18
+E1702-060245-051 (18) app_init: starting mesibo-backend  (r 0)
+E1702-060245-051 (18) write_pidfile: PID: 18
+E1702-060245-051 (18): mesibo backend build date: Mon Feb 17 05:55:33 2025 UTC
+E1702-060245-051 (18): mesibo backend build number: 1850
+E1702-060245-051 (18): opening db: qamesibo
+E1702-060245-061 (1): Public IP: 40.80.201.60
+E1702-060245-061 (1): onpremise init done
+I1702-060245-061 (1): Starting mesibo
+E1702-060245-066 (1): Ensure that ports 5223, 4443, 5443, 8443, 513, 5222, and 5228 are open for incoming connections
+E1702-060245-066 (1): ==> ready to connect your users now!
+E1702-060245-114 (18): starting mesibo FastCGI on port: 5000
+
+--- MySQL version
+$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 45
+Server version: 8.0.41-0ubuntu0.24.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.

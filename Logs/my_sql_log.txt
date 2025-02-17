@@ -1,0 +1,11 @@
+$ sudo tail -f /var/log/mysql/error.log
+2025-02-17T02:16:22.723494Z 9 [Warning] [MY-010058] [Server] Hostname 'edc47.daten-de.com' does not resolve to '92.118.39.204'.
+2025-02-17T02:24:57.813124Z 21 [Warning] [MY-010056] [Server] Host name '208-48-245-210.fpt.vn' could not be resolved: Name or service not known
+2025-02-17T02:24:57.813159Z 22 [Warning] [MY-010056] [Server] Host name '208-48-245-210.fpt.vn' could not be resolved: Name or service not known
+2025-02-17T02:48:30.249973Z 24 [Warning] [MY-013360] [Server] Plugin sha256_password reported: ''sha256_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
+2025-02-17T04:21:01.696138Z 58 [Warning] [MY-010055] [Server] IP address '14.248.94.6' could not be resolved: Name or service not known
+2025-02-17T05:41:42.609251Z 73 [Warning] [MY-010055] [Server] IP address '196.251.114.6' could not be resolved: Name or service not known
+2025-02-17T06:07:49.173232Z 86 [Warning] [MY-010055] [Server] IP address '91.223.169.83' could not be resolved: Name or service not known
+2025-02-17T06:23:17.064457Z 87 [Warning] [MY-010055] [Server] IP address '196.251.91.78' could not be resolved: Name or service not known
+2025-02-17T06:26:21.079956Z 91 [Warning] [MY-010055] [Server] IP address '196.251.91.52' could not be resolved: Name or service not known
+2025-02-17T06:34:05.658582Z 100 [Warning] [MY-010055] [Server] IP address '91.223.169.88' could not be resolved: Name or service not known
