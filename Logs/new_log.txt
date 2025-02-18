@@ -1,11 +1,12 @@
-E1702-144526-876 (1) app_init: starting mesibo  (r 0)
-E1702-144526-876 (1) write_pidfile: PID: 1
-E1702-144526-876 (1): mesibo on-premise build date: Mon Feb 17 14:26:46 2025 UTC
-E1702-144526-876 (1): mesibo on-premise build number: 9135
-E1702-144526-876 (1): CPU: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
-E1702-144526-876 (1): Total RAM: 7.89 GB
-E1702-144526-876 (1): Free  RAM: 4.85 GB
-E1702-144526-876 (1): activating debug mode 3 - not recommended for production use
+$ sudo docker logs mesibo
+E1802-072209-195 (1) app_init: starting mesibo  (r 0)
+E1802-072209-195 (1) write_pidfile: PID: 1
+E1802-072209-195 (1): mesibo on-premise build date: Mon Feb 17 14:26:46 2025 UTC
+E1802-072209-195 (1): mesibo on-premise build number: 9135
+E1802-072209-195 (1): CPU: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+E1802-072209-195 (1): Total RAM: 7.89 GB
+E1802-072209-195 (1): Free  RAM: 4.82 GB
+E1802-072209-195 (1): activating debug mode 3 - not recommended for production use
 
 .--------------------------[ Activating Debug Mode ]---------------------------.
 |                                                                              |
@@ -14,381 +15,46 @@ E1702-144526-876 (1): activating debug mode 3 - not recommended for production u
 | production.                                                                  |
 |______________________________________________________________________________|
 
-E1702-144526-876 (1): module_exports_init
-E1702-144526-876 (1): module jscloud (jscloud) loaded
-E1702-144526-876 (1): scripting initialized
-E1702-144526-876 (1): Local IP count: 2
-E1702-144526-876 (1): --> multiple(2) IPs found - listening on all the IPs. If you like to use particular IPs only, set them in configuration using one or more 'ip' fields
-E1702-144526-884 (1) signal_can_ignored: signal ignored: 17
-E1702-144526-891 (1) signal_can_ignored: signal ignored: 17
-E1702-144526-891 (1): Local IP Address: 10.0.0.19
-E1702-144526-891 (1): Local IP Address: 172.17.0.1
-E1702-144526-891 (1): Script path: /mesibo/scripts
-E1702-144526-896 (16): Authenticating app token...
-E1702-144527-336 (16): Public IP: 40.80.201.60
-E1702-144527-336 (16): Mesibo On-Premise App ID: 458692
-E1702-144527-336 (16): Database Host: qamesibo.kidkare.com
-E1702-144527-336 (16): Database Name: qamesibo
-E1702-144527-336 (16): database: qamesibo
-E1702-144527-336 (16): Connecting to database host: qamesibo.kidkare.com
-E1702-144527-346 (16): database connection verified
-E1702-144527-516 (16) print_stats: db_stats: config 151 maxused 59 inuse 22 load 14 maxload 39
-E1702-144527-520 (16) version: MySQL Version: 8.0.41-0ubuntu0.24.04.1
-E1702-144527-520 (16): Loading certificates from: /certs
-E1702-144527-520 (16) ssl_context_server: certificate: /certs/cert.pem
-E1702-144527-520 (16) ssl_context_server: private key: /certs/privkey.pem
-E1702-144527-520 (16) ssl_context_server: chain certificate: /certs/chain.pem
-E1702-144527-522 (16): starting backend on port: 5000
-E1702-144527-522 (16): starting backend: 17
-E1702-144527-522 (16): Web hook: https://mmpubdev3-api.kidkare.com/mmchat/mesibo-webhook [Disabled]
-E1702-144527-525 (17) app_init: starting mesibo-backend  (r 0)
-E1702-144527-526 (17) write_pidfile: PID: 17
-E1702-144527-526 (17): mesibo backend build date: Mon Feb 17 14:26:36 2025 UTC
-E1702-144527-526 (17): mesibo backend build number: 1870
-E1702-144527-526 (17): Warning: Backend API debug mode is activated using the '-g' option, which will severely impact performance. It is highly recommended to disable it in production.
-E1702-144527-526 (17): opening db: qamesibo
-E1702-144527-545 (1): Public IP: 40.80.201.60
-E1702-144527-545 (1): onpremise init done
-I1702-144527-545 (1): Starting mesibo
-E1702-144527-549 (1): Ensure that ports 5223, 4443, 5443, 8443, 513, 5222, and 5228 are open for incoming connections
-E1702-144527-549 (1): ==> ready to connect your users now!
-E1702-144527-620 (17): starting mesibo FastCGI on port: 5000
-E1702-144542-992 (44): API request sent (id 0)
-E1702-144543-705 (44): API response received in 714 msec (id 0)
-E1702-144543-705 (44): updating database
-E1702-144543-715 (44): database updated in 9 msec
-E1702-144543-715 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803543},"op":"useradd","result":true} (id 0)
-E1702-144621-082 (46): API request sent (id 0)
-E1702-144621-785 (46): API response received in 703 msec (id 0)
-E1702-144621-785 (46): updating database
-E1702-144621-795 (46): database updated in 9 msec
-E1702-144621-795 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803581},"op":"useradd","result":true} (id 0)
-E1702-144623-029 (44): API request sent (id 0)
-E1702-144623-364 (44): API response received in 335 msec (id 0)
-E1702-144623-364 (44): updating database
-E1702-144623-374 (44): database updated in 9 msec
-E1702-144623-374 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803583},"op":"useradd","result":true} (id 0)
-E1702-144753-109 (46): API request sent (id 123)
-E1702-144753-812 (46): API response received in 704 msec (id 123)
-E1702-144753-812 (46): updating database
-E1702-144753-823 (46): database updated in 10 msec
-E1702-144753-823 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803673},"op":"useradd","id":123,"result":true} (id 123)
-E1702-144803-266 (44): API request sent (id 0)
-E1702-144803-577 (44): API response received in 311 msec (id 0)
-E1702-144803-577 (44): updating database
-E1702-144803-587 (44): database updated in 10 msec
-E1702-144803-587 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803683},"op":"useradd","result":true} (id 0)
-E1702-144815-014 (46): API request sent (id 123)
-E1702-144815-349 (46): API response received in 335 msec (id 123)
-E1702-144815-349 (46): updating database
-E1702-144815-359 (46): database updated in 9 msec
-E1702-144815-359 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803695},"op":"useradd","id":123,"result":true} (id 123)
-E1702-144818-090 (44): API request sent (id 123)
-E1702-144818-389 (44): API response received in 299 msec (id 123)
-E1702-144818-389 (44): updating database
-E1702-144818-399 (44): database updated in 9 msec
-E1702-144818-399 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803698},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145035-723 (46): API request sent (id 123)
-E1702-145036-425 (46): API response received in 702 msec (id 123)
-E1702-145036-425 (46): updating database
-E1702-145036-434 (46): database updated in 9 msec
-E1702-145036-434 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803836},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145053-294 (44): API request sent (id 123)
-E1702-145053-626 (44): API response received in 332 msec (id 123)
-E1702-145053-627 (44): updating database
-E1702-145053-636 (44): database updated in 9 msec
-E1702-145053-636 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803853},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145056-941 (46): API request sent (id 123)
-E1702-145057-223 (46): API response received in 282 msec (id 123)
-E1702-145057-223 (46): updating database
-E1702-145057-231 (46): database updated in 7 msec
-E1702-145057-231 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803857},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145100-152 (44): API request sent (id 123)
-E1702-145100-460 (44): API response received in 307 msec (id 123)
-E1702-145100-460 (44): updating database
-E1702-145100-466 (44): database updated in 6 msec
-E1702-145100-466 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803860},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145102-760 (46): API request sent (id 123)
-E1702-145103-084 (46): API response received in 323 msec (id 123)
-E1702-145103-084 (46): updating database
-E1702-145103-091 (46): database updated in 7 msec
-E1702-145103-091 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803863},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145107-980 (44): API request sent (id 123)
-E1702-145108-306 (44): API response received in 325 msec (id 123)
-E1702-145108-306 (44): updating database
-E1702-145108-313 (44): database updated in 6 msec
-E1702-145108-313 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803868},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145109-995 (46): API request sent (id 123)
-E1702-145110-317 (46): API response received in 322 msec (id 123)
-E1702-145110-317 (46): updating database
-E1702-145110-323 (46): database updated in 6 msec
-E1702-145110-323 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803870},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145111-926 (44): API request sent (id 123)
-E1702-145112-249 (44): API response received in 323 msec (id 123)
-E1702-145112-249 (44): updating database
-E1702-145112-256 (44): database updated in 7 msec
-E1702-145112-256 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803872},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145113-676 (46): API request sent (id 123)
-E1702-145114-002 (46): API response received in 326 msec (id 123)
-E1702-145114-002 (46): updating database
-E1702-145114-011 (46): database updated in 8 msec
-E1702-145114-011 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803873},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145115-440 (44): API request sent (id 123)
-E1702-145115-753 (44): API response received in 313 msec (id 123)
-E1702-145115-753 (44): updating database
-E1702-145115-761 (44): database updated in 7 msec
-E1702-145115-761 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803875},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145117-238 (46): API request sent (id 123)
-E1702-145117-548 (46): API response received in 310 msec (id 123)
-E1702-145117-548 (46): updating database
-E1702-145117-555 (46): database updated in 7 msec
-E1702-145117-555 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803877},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145119-103 (44): API request sent (id 123)
-E1702-145119-422 (44): API response received in 319 msec (id 123)
-E1702-145119-422 (44): updating database
-E1702-145119-430 (44): database updated in 7 msec
-E1702-145119-430 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803879},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145120-959 (46): API request sent (id 123)
-E1702-145121-285 (46): API response received in 326 msec (id 123)
-E1702-145121-285 (46): updating database
-E1702-145121-293 (46): database updated in 8 msec
-E1702-145121-293 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803881},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145122-740 (44): API request sent (id 123)
-E1702-145123-063 (44): API response received in 323 msec (id 123)
-E1702-145123-063 (44): updating database
-E1702-145123-080 (44): database updated in 16 msec
-E1702-145123-080 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803882},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145125-113 (46): API request sent (id 123)
-E1702-145125-443 (46): API response received in 330 msec (id 123)
-E1702-145125-443 (46): updating database
-E1702-145125-455 (46): database updated in 12 msec
-E1702-145125-455 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803885},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145127-806 (44): API request sent (id 123)
-E1702-145128-089 (44): API response received in 283 msec (id 123)
-E1702-145128-089 (44): updating database
-E1702-145128-098 (44): database updated in 8 msec
-E1702-145128-098 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803888},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145130-941 (46): API request sent (id 123)
-E1702-145131-272 (46): API response received in 330 msec (id 123)
-E1702-145131-272 (46): updating database
-E1702-145131-279 (46): database updated in 7 msec
-E1702-145131-279 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803891},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145132-969 (44): API request sent (id 123)
-E1702-145133-249 (44): API response received in 279 msec (id 123)
-E1702-145133-249 (44): updating database
-E1702-145133-256 (44): database updated in 6 msec
-E1702-145133-256 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803893},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145134-840 (46): API request sent (id 123)
-E1702-145135-164 (46): API response received in 324 msec (id 123)
-E1702-145135-164 (46): updating database
-E1702-145135-173 (46): database updated in 8 msec
-E1702-145135-173 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803895},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145137-113 (44): API request sent (id 123)
-E1702-145137-446 (44): API response received in 333 msec (id 123)
-E1702-145137-446 (44): updating database
-E1702-145137-457 (44): database updated in 11 msec
-E1702-145137-457 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803897},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145140-877 (46): API request sent (id 123)
-E1702-145141-163 (46): API response received in 286 msec (id 123)
-E1702-145141-163 (46): updating database
-E1702-145141-172 (46): database updated in 9 msec
-E1702-145141-172 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803901},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145150-961 (44): API request sent (id 123)
-E1702-145151-289 (44): API response received in 328 msec (id 123)
-E1702-145151-290 (44): updating database
-E1702-145151-300 (44): database updated in 10 msec
-E1702-145151-300 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803911},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145153-162 (46): API request sent (id 123)
-E1702-145153-484 (46): API response received in 321 msec (id 123)
-E1702-145153-484 (46): updating database
-E1702-145153-494 (46): database updated in 10 msec
-E1702-145153-494 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803913},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145156-018 (44): API request sent (id 123)
-E1702-145156-342 (44): API response received in 324 msec (id 123)
-E1702-145156-342 (44): updating database
-E1702-145156-350 (44): database updated in 8 msec
-E1702-145156-350 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803916},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145158-119 (46): API request sent (id 123)
-E1702-145158-445 (46): API response received in 326 msec (id 123)
-E1702-145158-445 (46): updating database
-E1702-145158-458 (46): database updated in 12 msec
-E1702-145158-458 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803918},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145201-454 (44): API request sent (id 123)
-E1702-145201-765 (44): API response received in 311 msec (id 123)
-E1702-145201-765 (44): updating database
-E1702-145201-777 (44): database updated in 12 msec
-E1702-145201-777 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803921},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145203-969 (46): API request sent (id 123)
-E1702-145204-291 (46): API response received in 322 msec (id 123)
-E1702-145204-291 (46): updating database
-E1702-145204-300 (46): database updated in 8 msec
-E1702-145204-300 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803924},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145206-633 (44): API request sent (id 123)
-E1702-145206-960 (44): API response received in 326 msec (id 123)
-E1702-145206-960 (44): updating database
-E1702-145206-967 (44): database updated in 7 msec
-E1702-145206-967 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803926},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145209-172 (46): API request sent (id 123)
-E1702-145209-502 (46): API response received in 330 msec (id 123)
-E1702-145209-502 (46): updating database
-E1702-145209-510 (46): database updated in 8 msec
-E1702-145209-510 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803929},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145211-951 (44): API request sent (id 123)
-E1702-145212-233 (44): API response received in 282 msec (id 123)
-E1702-145212-234 (44): updating database
-E1702-145212-242 (44): database updated in 8 msec
-E1702-145212-242 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803932},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145213-919 (46): API request sent (id 123)
-E1702-145214-238 (46): API response received in 318 msec (id 123)
-E1702-145214-238 (46): updating database
-E1702-145214-250 (46): database updated in 11 msec
-E1702-145214-250 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803934},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145215-869 (44): API request sent (id 123)
-E1702-145216-177 (44): API response received in 307 msec (id 123)
-E1702-145216-177 (44): updating database
-E1702-145216-185 (44): database updated in 8 msec
-E1702-145216-186 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803936},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145218-233 (46): API request sent (id 123)
-E1702-145218-558 (46): API response received in 325 msec (id 123)
-E1702-145218-558 (46): updating database
-E1702-145218-567 (46): database updated in 9 msec
-E1702-145218-567 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803938},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145220-865 (44): API request sent (id 123)
-E1702-145221-174 (44): API response received in 308 msec (id 123)
-E1702-145221-174 (44): updating database
-E1702-145221-180 (44): database updated in 6 msec
-E1702-145221-180 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803941},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145223-739 (46): API request sent (id 123)
-E1702-145224-063 (46): API response received in 323 msec (id 123)
-E1702-145224-063 (46): updating database
-E1702-145224-076 (46): database updated in 12 msec
-E1702-145224-076 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803943},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145227-399 (44): API request sent (id 123)
-E1702-145227-734 (44): API response received in 334 msec (id 123)
-E1702-145227-734 (44): updating database
-E1702-145227-741 (44): database updated in 7 msec
-E1702-145227-741 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803947},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145229-563 (45): API request sent (id 123)
-E1702-145229-841 (45): API response received in 278 msec (id 123)
-E1702-145229-841 (45): updating database
-E1702-145229-850 (45): database updated in 8 msec
-E1702-145229-850 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803949},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145231-515 (44): API request sent (id 123)
-E1702-145231-835 (44): API response received in 319 msec (id 123)
-E1702-145231-835 (44): updating database
-E1702-145231-843 (44): database updated in 8 msec
-E1702-145231-843 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803951},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145233-714 (45): API request sent (id 123)
-E1702-145234-038 (45): API response received in 324 msec (id 123)
-E1702-145234-038 (45): updating database
-E1702-145234-046 (45): database updated in 7 msec
-E1702-145234-046 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803953},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145236-630 (44): API request sent (id 123)
-E1702-145236-957 (44): API response received in 327 msec (id 123)
-E1702-145236-957 (44): updating database
-E1702-145236-964 (44): database updated in 6 msec
-E1702-145236-964 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803956},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145239-645 (45): API request sent (id 123)
-E1702-145239-971 (45): API response received in 325 msec (id 123)
-E1702-145239-971 (45): updating database
-E1702-145239-979 (45): database updated in 8 msec
-E1702-145239-979 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803959},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145244-021 (44): API request sent (id 123)
-E1702-145244-349 (44): API response received in 327 msec (id 123)
-E1702-145244-349 (44): updating database
-E1702-145244-357 (44): database updated in 7 msec
-E1702-145244-357 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803964},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145245-682 (46): API request sent (id 0)
-E1702-145246-010 (46): API response received in 328 msec (id 0)
-E1702-145246-010 (46): updating database
-E1702-145246-020 (46): database updated in 9 msec
-E1702-145246-020 (46): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803965},"op":"useradd","result":true} (id 0)
-E1702-145246-500 (44): API request sent (id 123)
-E1702-145246-820 (44): API response received in 320 msec (id 123)
-E1702-145246-820 (44): updating database
-E1702-145246-827 (44): database updated in 7 msec
-E1702-145246-828 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803966},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145247-435 (45): API request sent (id 0)
-E1702-145247-758 (45): API response received in 323 msec (id 0)
-E1702-145247-758 (45): updating database
-E1702-145247-768 (45): database updated in 9 msec
-E1702-145247-768 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803967},"op":"useradd","result":true} (id 0)
-E1702-145248-242 (44): API request sent (id 123)
-E1702-145248-567 (44): API response received in 325 msec (id 123)
-E1702-145248-567 (44): updating database
-E1702-145248-577 (44): database updated in 9 msec
-E1702-145248-577 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803968},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145250-633 (45): API request sent (id 123)
-E1702-145250-956 (45): API response received in 322 msec (id 123)
-E1702-145250-956 (45): updating database
-E1702-145250-964 (45): database updated in 7 msec
-E1702-145250-964 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803970},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145252-726 (44): API request sent (id 123)
-E1702-145253-047 (44): API response received in 320 msec (id 123)
-E1702-145253-047 (44): updating database
-E1702-145253-054 (44): database updated in 7 msec
-E1702-145253-054 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803972},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145255-257 (45): API request sent (id 123)
-E1702-145255-584 (45): API response received in 326 msec (id 123)
-E1702-145255-584 (45): updating database
-E1702-145255-591 (45): database updated in 6 msec
-E1702-145255-591 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803975},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145256-999 (44): API request sent (id 123)
-E1702-145257-312 (44): API response received in 312 msec (id 123)
-E1702-145257-312 (44): updating database
-E1702-145257-319 (44): database updated in 7 msec
-E1702-145257-319 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803977},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145259-048 (45): API request sent (id 123)
-E1702-145259-367 (45): API response received in 319 msec (id 123)
-E1702-145259-367 (45): updating database
-E1702-145259-379 (45): database updated in 12 msec
-E1702-145259-379 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803979},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145302-326 (44): API request sent (id 123)
-E1702-145302-653 (44): API response received in 326 msec (id 123)
-E1702-145302-653 (44): updating database
-E1702-145302-661 (44): database updated in 8 msec
-E1702-145302-661 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803982},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145302-927 (45): API request sent (id 0)
-E1702-145303-247 (45): API response received in 320 msec (id 0)
-E1702-145303-247 (45): updating database
-E1702-145303-258 (45): database updated in 11 msec
-E1702-145303-258 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803983},"op":"useradd","result":true} (id 0)
-E1702-145305-140 (44): API request sent (id 123)
-E1702-145305-466 (44): API response received in 325 msec (id 123)
-E1702-145305-466 (44): updating database
-E1702-145305-477 (44): database updated in 11 msec
-E1702-145305-477 (44): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803985},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145308-830 (45): API request sent (id 123)
-E1702-145309-156 (45): API response received in 326 msec (id 123)
-E1702-145309-156 (45): updating database
-E1702-145309-163 (45): database updated in 6 msec
-E1702-145309-163 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803989},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145310-123 (44): API request sent (id 0)
-E1702-145310-444 (44): API response received in 320 msec (id 0)
-E1702-145310-444 (44): updating database
-E1702-145310-451 (44): database updated in 7 msec
-E1702-145310-451 (44): Sending response to web server: {"user":{"uid":6795986,"address":"dev-test-2","token":"69a20be9ae9eec6e8271ec9caf7a0af150d35979bd5f1bdaedc9eff4bc57bna3159a5ea5e","cts":1739764931,"mts":1739803990},"op":"useradd","result":true} (id 0)
-E1702-145311-523 (45): API request sent (id 123)
-E1702-145311-850 (45): API response received in 326 msec (id 123)
-E1702-145311-850 (45): updating database
-E1702-145311-859 (45): database updated in 8 msec
-E1702-145311-859 (45): Sending response to web server: {"user":{"uid":6796018,"address":"dev-test-6","token":"87afbcd1e2870d4f0b88ac6d9207710cb3d9e261bf85d34de444bc56bja1612279ee6","cts":1739757287,"mts":1739803991},"op":"useradd","id":123,"result":true} (id 123)
-E1702-145836-739 (44): API request sent (id 123)
-E1702-145837-439 (44): API response received in 700 msec (id 123)
-E1702-145837-439 (44): updating database
-E1702-145920-049 (45): API request sent (id 123)
-E1702-145920-746 (45): API response received in 697 msec (id 123)
-E1702-145920-746 (45): updating database
-E1702-145959-125 (46): API request sent (id 123)
-E1702-145959-828 (46): API response received in 702 msec (id 123)
-E1702-145959-828 (46): updating database
-E1702-150230-800 (43): API request sent (id 123)
-E1702-150231-530 (43): API response received in 730 msec (id 123)
-E1702-150231-530 (43): updating database
-E1702-150359-016 (47) launch: stretching threadpool: mesibo-backend
-E1702-150359-016 (49): API request sent (id 0)
-E1702-150359-711 (49): API response received in 694 msec (id 0)
-E1702-150359-711 (49): updating database
-E1702-150359-794 (49) get_connection: created database connection: total 5
-E1702-150359-801 (49): database updated in 89 msec
-E1702-150359-801 (49): Sending response to web server: {"user":{"uid":6795986,"address":"dev-test-2","token":"69a20be9ae9eec6e8271ec9caf7a0af150d35979bd5f1bdaedc9eff4bc57bna3159a5ea5e","cts":1739764931,"mts":1739804639},"op":"useradd","result":true} (id 0)
+E1802-072209-196 (1): module_exports_init
+E1802-072209-196 (1): module jscloud (jscloud) loaded
+E1802-072209-196 (1): scripting initialized
+E1802-072209-196 (1): Local IP count: 2
+E1802-072209-196 (1): --> multiple(2) IPs found - listening on all the IPs. If you like to use particular IPs only, set them in configuration using one or more 'ip' fields
+E1802-072209-204 (1) signal_can_ignored: signal ignored: 17
+E1802-072209-210 (1) signal_can_ignored: signal ignored: 17
+E1802-072209-210 (1): Local IP Address: 10.0.0.19
+E1802-072209-210 (1): Local IP Address: 172.17.0.1
+E1802-072209-210 (1): Script path: /mesibo/scripts
+E1802-072209-214 (17): Authenticating app token...
+E1802-072209-665 (17): Public IP: 40.80.201.60
+E1802-072209-665 (17): Mesibo On-Premise App ID: 458692
+E1802-072209-665 (17): Database Host: mesibodb.southcentralus.cloudapp.azure.com
+E1802-072209-665 (17): Database Name: qamesibo
+E1802-072209-665 (17): database: qamesibo
+E1802-072209-665 (17): Connecting to database host: mesibodb.southcentralus.cloudapp.azure.com
+E1802-072209-676 (17): database connection verified
+E1802-072209-826 (17) print_stats: db_stats: config 151 maxused 16 inuse 12 load 7 maxload 10
+E1802-072209-830 (17) version: MySQL Version: 8.0.41-0ubuntu0.24.04.1
+E1802-072209-830 (17): Loading certificates from: /certs
+E1802-072209-831 (17) ssl_context_server: certificate: /certs/cert.pem
+E1802-072209-831 (17) ssl_context_server: private key: /certs/privkey.pem
+E1802-072209-831 (17) ssl_context_server: chain certificate: /certs/chain.pem
+E1802-072209-833 (17): starting backend on port: 5000
+E1802-072209-833 (17): starting backend: 18
+E1802-072209-833 (17): Web hook: https://mmpubdev3-api.kidkare.com/mmchat/mesibo-webhook [Disabled]
+E1802-072209-837 (18) app_init: starting mesibo-backend  (r 0)
+E1802-072209-837 (18) write_pidfile: PID: 18
+E1802-072209-837 (18): mesibo backend build date: Mon Feb 17 14:26:36 2025 UTC
+E1802-072209-837 (18): mesibo backend build number: 1870
+E1802-072209-837 (18): Warning: Backend API debug mode is activated using the '-g' option, which will severely impact performance. It is highly recommended to disable it in production.
+E1802-072209-837 (18): opening db: qamesibo
+E1802-072209-840 (1): Public IP: 40.80.201.60
+E1802-072209-840 (1): onpremise init done
+I1802-072209-840 (1): Starting mesibo
+E1802-072209-844 (1): Ensure that ports 5223, 4443, 5443, 8443, 513, 5222, and 5228 are open for incoming connections
+E1802-072209-844 (1): ==> ready to connect your users now!
+E1802-072209-895 (18): starting mesibo FastCGI on port: 5000
+E1802-072225-877 (22): login: user address: (546129) uid: 6796131 aid: 458692 (0x728d54002878 0x1406d848 32 0x728d58000b60 0 0)
+E1802-073610-380 (47): API request sent (id 0)
+E1802-073611-088 (47): API response received in 708 msec (id 0)
+E1802-073611-088 (47): updating database
