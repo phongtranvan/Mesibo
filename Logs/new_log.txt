@@ -1,60 +1,82 @@
-$ sudo docker logs mesibo
-E1802-072209-195 (1) app_init: starting mesibo  (r 0)
-E1802-072209-195 (1) write_pidfile: PID: 1
-E1802-072209-195 (1): mesibo on-premise build date: Mon Feb 17 14:26:46 2025 UTC
-E1802-072209-195 (1): mesibo on-premise build number: 9135
-E1802-072209-195 (1): CPU: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
-E1802-072209-195 (1): Total RAM: 7.89 GB
-E1802-072209-195 (1): Free  RAM: 4.82 GB
-E1802-072209-195 (1): activating debug mode 3 - not recommended for production use
+E2502-200216-934 (57248) write_pidfile: PID: 57248
+E2502-200216-934 (57248): mesibo on-premise build date: Thu Nov 21 05:11:43 2024 UTC
+E2502-200216-934 (57248): mesibo on-premise build number: 8928
+E2502-200216-934 (57248): module_exports_init
+E2502-200216-935 (57248) read_config_file: Reading configuration file /etc/mesibo/mesibo-control.conf
+E2502-200216-935 (57248): Unknown option name - ignored
+E2502-200216-935 (57248): Unknown option aid - ignored
+E2502-200216-935 (57248): Unknown option expiry - ignored
+E2502-200216-935 (57248): Unknown option paid - ignored
+E2502-200216-935 (57248): Unknown option password - ignored
+E2502-200216-935 (57248): Unknown option database.type - ignored
+E2502-200216-935 (57248): module jscloud (jscloud) loaded
+E2502-200216-935 (57248): scripting initialized
+E2502-200216-935 (57248): Local IP count: 1
+E2502-200216-951 (57248) signal_can_ignored: signal ignored: 17
+E2502-200216-958 (57248) signal_can_ignored: signal ignored: 17
+E2502-200216-958 (57248): Local IP Address: 10.0.0.23
+E2502-200216-958 (57248): Script path: /mesibo/scripts
+E2502-200217-060 (57280): Authenticating app token...
 
-.--------------------------[ Activating Debug Mode ]---------------------------.
+.------------------------------[ System Message ]------------------------------.
 |                                                                              |
-| Warning: Debug mode is activated using the '-g' option, which will severely  |
-| impact performance. It is highly recommended to disable it in                |
-| production.                                                                  |
+| You are running an older version of mesibo on-premise. Please update by exec |
+| uting a command '$ sudo docker pull mesibo/mesibo'                           |
 |______________________________________________________________________________|
 
-E1802-072209-196 (1): module_exports_init
-E1802-072209-196 (1): module jscloud (jscloud) loaded
-E1802-072209-196 (1): scripting initialized
-E1802-072209-196 (1): Local IP count: 2
-E1802-072209-196 (1): --> multiple(2) IPs found - listening on all the IPs. If you like to use particular IPs only, set them in configuration using one or more 'ip' fields
-E1802-072209-204 (1) signal_can_ignored: signal ignored: 17
-E1802-072209-210 (1) signal_can_ignored: signal ignored: 17
-E1802-072209-210 (1): Local IP Address: 10.0.0.19
-E1802-072209-210 (1): Local IP Address: 172.17.0.1
-E1802-072209-210 (1): Script path: /mesibo/scripts
-E1802-072209-214 (17): Authenticating app token...
-E1802-072209-665 (17): Public IP: 40.80.201.60
-E1802-072209-665 (17): Mesibo On-Premise App ID: 458692
-E1802-072209-665 (17): Database Host: mesibodb.southcentralus.cloudapp.azure.com
-E1802-072209-665 (17): Database Name: qamesibo
-E1802-072209-665 (17): database: qamesibo
-E1802-072209-665 (17): Connecting to database host: mesibodb.southcentralus.cloudapp.azure.com
-E1802-072209-676 (17): database connection verified
-E1802-072209-826 (17) print_stats: db_stats: config 151 maxused 16 inuse 12 load 7 maxload 10
-E1802-072209-830 (17) version: MySQL Version: 8.0.41-0ubuntu0.24.04.1
-E1802-072209-830 (17): Loading certificates from: /certs
-E1802-072209-831 (17) ssl_context_server: certificate: /certs/cert.pem
-E1802-072209-831 (17) ssl_context_server: private key: /certs/privkey.pem
-E1802-072209-831 (17) ssl_context_server: chain certificate: /certs/chain.pem
-E1802-072209-833 (17): starting backend on port: 5000
-E1802-072209-833 (17): starting backend: 18
-E1802-072209-833 (17): Web hook: https://mmpubdev3-api.kidkare.com/mmchat/mesibo-webhook [Disabled]
-E1802-072209-837 (18) app_init: starting mesibo-backend  (r 0)
-E1802-072209-837 (18) write_pidfile: PID: 18
-E1802-072209-837 (18): mesibo backend build date: Mon Feb 17 14:26:36 2025 UTC
-E1802-072209-837 (18): mesibo backend build number: 1870
-E1802-072209-837 (18): Warning: Backend API debug mode is activated using the '-g' option, which will severely impact performance. It is highly recommended to disable it in production.
-E1802-072209-837 (18): opening db: qamesibo
-E1802-072209-840 (1): Public IP: 40.80.201.60
-E1802-072209-840 (1): onpremise init done
-I1802-072209-840 (1): Starting mesibo
-E1802-072209-844 (1): Ensure that ports 5223, 4443, 5443, 8443, 513, 5222, and 5228 are open for incoming connections
-E1802-072209-844 (1): ==> ready to connect your users now!
-E1802-072209-895 (18): starting mesibo FastCGI on port: 5000
-E1802-072225-877 (22): login: user address: (546129) uid: 6796131 aid: 458692 (0x728d54002878 0x1406d848 32 0x728d58000b60 0 0)
-E1802-073610-380 (47): API request sent (id 0)
-E1802-073611-088 (47): API response received in 708 msec (id 0)
-E1802-073611-088 (47): updating database
+E2502-200217-542 (57280): Public IP: 40.124.179.169
+E2502-200217-542 (57280): Mesibo On-Premise App ID: 458692
+E2502-200217-542 (57280): Database Host: mesibodb.southcentralus.cloudapp.azure.com
+E2502-200217-542 (57280): Database Name: qamesibo
+E2502-200217-542 (57280): database: qamesibo
+E2502-200217-542 (57280): Connecting to database host: mesibodb.southcentralus.cloudapp.azure.com
+E2502-200217-591 (57280): database connection verified
+E2502-200217-745 (57280) print_stats: db_stats: config 1510 maxused 63 inuse 4 load 0 maxload 4
+E2502-200217-747 (57280) version: MySQL Version: 8.0.41-0ubuntu0.24.04.1
+E2502-200217-747 (57280): Loading certificates from: /certs
+**CRITICAL**2502-200217-747 (57280): Unable to load certificate: /certs/cert.pem
+E2502-200217-751 (57280): Port 80 is used by another app. Use --auth-path option
+E2502-200222-947 (57280) ssl_makecert: Generating self-signed TLS certificate for qamesiborhel.kidkare.com
+E2502-200222-950 (57280): starting backend on port: 32770
+E2502-200222-951 (57280): starting backend: 57282
+E2502-200222-951 (57280): Web hook: https://mmqa2-api.kidkare.com/mmchat/mesibo-webhook [Disabled]
+E2502-200222-963 (57282) app_init: starting mesibo-backend  (r 0)
+E2502-200222-963 (57282) write_pidfile: PID: 57282
+E2502-200222-963 (57282): mesibo backend build date: Thu Nov 21 05:11:33 2024 UTC
+E2502-200222-963 (57282): mesibo backend build number: 1780
+E2502-200222-963 (57282): opening db: qamesibo
+E2502-200222-977 (57248): Public IP: 40.124.179.169
+E2502-200222-977 (57248): onpremise init done
+I2502-200222-978 (57248): Starting mesibo
+E2502-200222-981 (57248): Ensure that ports 5223, 4443, 5443, 8443, 513, 5222, and 5228 are open for incoming connections
+E2502-200222-981 (57248): ==> ready to connect your users now!
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: enable, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: turn, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: logs, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: dbhost, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: dbname, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: dbuser, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: dbpass, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: private, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: fallback, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: retention, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: enable, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: status, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: id, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: email, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: aid, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: modify, possibly parent is not declared in g_objids
+**CRITICAL**2502-200223-072 (57282): failed to find parent for: remove, possibly parent is not declared in g_objids
+E2502-200223-072 (57282): starting mesibo FastCGI on port: 32770
+E2502-220310-004 (57248): mesibo onpremise: on termination: 15 rv 1
+E2502-220310-004 (57248): onexit called: 1 0
+E2502-220310-004 (57248): onpremise_cleanup: 57282 15 0
+E2502-220310-128 (57280): onpremise_cleanup: 57282 0 1
+E2502-220310-128 (57280): mesibo on-premise exiting...
+E2502-220310-128 (57280): mesibo onpremise: on termination: 15 rv 0
+E2502-220310-128 (57280): onexit called: 0 1
+E2502-220310-128 (57282): mesibo backend: on termination: 15
+E2502-220310-129 (57248) signal_can_ignored: signal ignored: 17
+E2502-220325-025 (57249) signal_can_ignored: signal ignored: 18
+E2502-220325-025 (57249): mesibo onpremise: on termination: 15 rv 0
+E2502-220325-025 (57249): onexit called: 0 1
